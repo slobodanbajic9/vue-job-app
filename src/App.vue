@@ -1,13 +1,9 @@
-<script>
-export default {
-  data() {
-    return {
-      name: "John Doe",
-    };
-  },
-};
+<script setup>
+import Navbar from "@/components/Navbar.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <h1>{{ name }}</h1>
+  <Navbar />
+  <RouterView />
 </template>
